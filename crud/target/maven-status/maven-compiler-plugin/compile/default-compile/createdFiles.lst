@@ -1,0 +1,5 @@
+com\agenciacristal\crud\product\ProductRepository.class
+com\agenciacristal\crud\CrudApplication.class
+com\agenciacristal\crud\product\ProductController.class
+com\agenciacristal\crud\product\Product.class
+com\agenciacristal\crud\product\ProductService.class
