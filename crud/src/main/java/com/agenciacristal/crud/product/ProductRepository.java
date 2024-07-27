@@ -12,8 +12,9 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
     // @Query("select * from Product where name = ?") // se puede hacer esto pero no se cmo
     Optional<Product> findProductByName(String name);
-    @Query(
+    /*@Query(
             value = "SELECT * FROM Product u WHERE u.price > 0",
-            nativeQuery = true)
+            nativeQuery = true)*/
+    @Query(value="SELECT * FROM Product u", nativeQuery = true)
     List<Product> findAllActiveProductsNative();
 }
